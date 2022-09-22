@@ -117,7 +117,7 @@ int main()
 	string year("");
 
 	while (year.size() != 2) {
-		cout << "Введите ключ, год рождения: ";
+		cout << "Enter key, year of birth: ";
 		cin >> year;
 	}
 

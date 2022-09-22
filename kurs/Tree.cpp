@@ -29,7 +29,7 @@ void Tree::add(enterprise* D, int weight) {
 
 void Tree::search(int D) {
 	Vertex** p = &m_root;
-	cout << "\nРезультат: \n";
+	cout << "\nResult: \n";
 	SetConsoleOutputCP(866);
 
 	while (*p != nullptr) {
@@ -130,7 +130,7 @@ void workWithTree(Tree sortBase) {
 
 	int key;
 	while (1) {
-		cout << "Введите ключи (номер отдела) (число от 0 до 240, шаг 10): ";
+		cout << "Enter key (department nuber) (from 0 to 240, step 10): ";
 
 		cin >> key;
 

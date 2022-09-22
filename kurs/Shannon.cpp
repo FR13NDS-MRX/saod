@@ -40,9 +40,8 @@ void Shannon() {
 		cout << i << ")" << charNumb[i].smb << " =\t" << charNumb[i].sum << "\t" << charNumb[i].pr << "\t" << charNumb[i].code << "\n";
 	}
 
-	cout << "Сумма всех вероятностей: " << k << endl;
-	//cout << k << "\n";
-	cout << "Ср. длина символа < Энтропии \n";
+	cout << "Sum of all probabilities: " << k << endl;
+	cout << "Average symbol length < Entropy \n";
 	cout << "" << Length << " < " << H << " + 1\n";
 
 	delete Q;

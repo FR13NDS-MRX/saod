@@ -32,10 +32,9 @@ vector<symb>  probality() {
 			charNumb[i].pr = static_cast<float>(charNumb[i].sum) / numberOfsymb;
 			P.push_back(charNumb[i].pr);
 		}
-
 	}
 
-	cout << "\nВсего: " << numberOfsymb << "\n\n";
+	cout << "\nTotal: " << numberOfsymb << "\n\n";
 
 	return charNumb;
 }

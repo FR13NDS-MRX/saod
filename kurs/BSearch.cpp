@@ -26,7 +26,7 @@ void BSearch(enterprise** Q, const char* x, int L, int R, int keySize, Queue<ent
 		else R = m;
 	}
 
-	cout << "\nРезультат \n";
+	cout << "\nResult \n";
 
 	while (compare(Q[R]->date, x, keySize) == 0) {
 		data.push(Q[R]);
