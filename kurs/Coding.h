@@ -8,12 +8,12 @@ struct symb {
 	char smb;
 	int sum = 0;
 	double pr = 0;
-	std::string code;
+	string code;
 };
 
-void sort(std::vector<symb>& charNumb, int L, int R);
-float entropy(std::vector<symb>& charNumb);
-float midLength(std::vector<symb>& charNumb);
+void sort(vector<symb>& charNumb, int L, int R);
+float entropy(vector<symb>& charNumb);
+float midLength(vector<symb>& charNumb);
 
 vector<symb> probality();
 void Shannon();

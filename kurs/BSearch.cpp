@@ -3,6 +3,7 @@
 #include <Windows.h>
 
 using namespace std;
+
 int compare(const char* a, const char* b, int keySize) {
 	for (int i = 6; i < 2 + 6; i++) {
 		if (a[i] > b[i - 6]) return 1;
@@ -30,7 +31,10 @@ void BSearch(enterprise** Q, const char* x, int L, int R, int keySize, Queue<ent
 	while (compare(Q[R]->date, x, keySize) == 0) {
 		data.push(Q[R]);
 		R++;
+
 		if (R == size)
+		{
 			break;
+		}
 	}
 }

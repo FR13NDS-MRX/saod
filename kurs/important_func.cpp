@@ -9,13 +9,13 @@ ofstream& operator << (ofstream& output, enterprise* data) {
 	return output;
 }
 
-std::vector<symb>  probality() {
+vector<symb>  probality() {
 	char ch;
 	int numberOfsymb = 0;
 	vector<symb> charNumb(256);
 	vector<float> P(256);
 	P.resize(0);
-	std::ifstream binFile("testBase2.dat", std::ios::binary);
+	ifstream binFile("testBase2.dat", ios::binary);
 
 	while (binFile.read(&ch, 1)) {
 		charNumb[static_cast<int>(ch) + 128].smb = ch;
